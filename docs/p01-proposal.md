@@ -16,9 +16,15 @@
 |---------------| --------------
 |Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
+<<<<<<< HEAD
 |Authors | Names of your team members and contact information (email addresses). |
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |  
 |Date | Winter 2022| 
+=======
+|Authors | Minsuh Kim (msk812@uw.edu), Faith Greene (bag01@uw.edu), Hana Pham (hanapham@uw.edu), Fila Mohamed (f10@uw.edu)|
+|Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
+|Date | Winter 2022|
+>>>>>>> 250564b5cacf4ad63fe67a3f13f62fe0a1ea459b
 |Abstract | No more than three sentences that summarize your project. Focus on the very most important aspects. For example: **(1)** "Our main question is .... This question is important because .... To address the question, we will ...." **(2)** "We are concerned with ..., becuase .... To address this concern, we plan to ...." **(3)** "Consider that ....  This is important because .... Accordingly, we plan to ...."   |
 |Keywords | 3-5 keywords that summarize your project.  (e.g., "Keywords: human physiology; bicycle exercise; elderly; power and heart rate times-series data") |
 |1.0 Introduction | Briefly introduce your project. (about 150 words) |
