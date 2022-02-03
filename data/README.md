@@ -6,8 +6,8 @@ In our project, we use the following data files and Application Programming Inte
 |Data File Name | Brief Description|
 |---------------| -----------------|
 |[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ...
-|[LGBT_Survey_DailyLife.csv] (./LGBT_Survey_DailyLife.csv) | This file contains LGBT Data across the European Union and Croatia.
+|[TDoR-Data-All.csv](./TDoR-Data-All.csv) | Contains records of transgender deaths from 1970 to today, including location and cause of death
+|[hate_crime.csv](./hate_crime.csv) | Contains records of hate crimes as recorded by the FBI since 1991
 
 ### Application Programming Interfaces (API) (TODO: Update/delete)
 
