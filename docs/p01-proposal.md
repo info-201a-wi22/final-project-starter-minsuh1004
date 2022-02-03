@@ -37,18 +37,24 @@ Our main question is how the availability of trans healthcare regarding medicall
 - Trans Hate Crimes
 
 
-##### 1.0 Introduction | Briefly introduce your project. (about 150 words) |
+##### 1.0 Introduction  (about 150 words)
+The main goal of our project is to analyze data on relationship between the impacts of transphobic hate crimes and rate of trans population suicides. We’re also looking into the availability of trans healthcare in regards of medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the affects of limited availability to transition healthcare on trans suicides.
 
-##### 2.0 Design Situation  
-Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. **Note**: You *must* include three citations to related work (URLs to similar work, high quality articles from the popular press, reseach papers, etc. ). You may find it helpful to include a figure.  (about 400 words) |
 
-###### - _Framing the topic of concern:_  
+##### 2.0 Design Situation: You may find it helpful to include a figure.  (about 400 words)
+
+###### - _Framing the topic of concern:_
+The topic of concern is the effect of availability of trans healthcare on the trans population in relation to trans suicides. A key element would be trans rights. This is solely a social justice involving a hinderance on trans peoples' ability to fully transition. 
 
 ###### - _Human Values:_
+The main human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools and accessibility to transition, so as to allow them to be who they are. We chose this topic to draw attention to the issues surrounding trans rights and to emphasize the detrimental results these hate crimes can have.
 
 ###### - _Stakeholders:_
+The direct stakeholders of our topic is the general population. We're motivated towards raising awareness on injustices towards trans people which are resulting in suicides. We're also bringing to light the problems surrounding the lack of availability of trans healthcare. Indirect stakeholders could be the policy makers who can make a difference in making trans healthcare accessible for everyone. Other stakeholders include those within the medical field. By displaying all this information, it may incite some advocates within the field to open up the possibilities of change.
 
 ###### - _Benefits & Harms:_
+A potential benefit would be a change surrounding availability of trans healthcare. If this information were to incite any positive outcome, this would be by far the greatest. It would mean that the data we presented incited some feelings of action and realization that something must be done.
+Some unanticipated consequences...
 
 ##### 3.0 Research questions: What motivates the questions? Why are they important? See the Deign Brief, section B.4. (about 150 words)
 
