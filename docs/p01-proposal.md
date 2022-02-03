@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal
+# Trans Rights Research: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
@@ -13,10 +13,9 @@
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
 
-###### Code name: Trans-Data
+##### Code name: Trans-Data
 
 ##### Project title: Trans Rights Research
-
 
 ##### Authors:
 - Minsuh Kim (msk812@uw.edu)
@@ -30,7 +29,7 @@ INFO-201: Technical Foundations of Informatics - The Information School - Univer
 ##### Date: Winter 2022
 
 ##### Abstract:  
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: **(1)** "Our main question is .... This question is important because .... To address the question, we will ...." **(2)** "We are concerned with ..., becuase .... To address this concern, we plan to ...." **(3)** "Consider that ....  This is important because .... Accordingly, we plan to ...."   
+Our main question is how the availability of trans healthcare regarding medically transitioning impacts the rates of trans suicide and transphobic hate crimes. This question is essential because data about trans people are often unknown to the general populous, so helping to increase the wealth of data available will help continue the fight for trans rights. To address this concern, we plan to look at available data sets and analyze if the rates of suicide and hate crimes change before and after, in a place, and with or without the availability of transition healthcare.    
 
 ##### Keywords
 - Trans Rights
@@ -44,23 +43,38 @@ No more than three sentences that summarize your project. Focus on the very most
 ##### 2.0 Design Situation  
 Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. **Note**: You *must* include three citations to related work (URLs to similar work, high quality articles from the popular press, reseach papers, etc. ). You may find it helpful to include a figure.  (about 400 words) |
 
-###### _Framing the topic of concern:_  
+###### - _Framing the topic of concern:_  
 
-###### _Human Values:_
+###### - _Human Values:_
 
-###### _Stakeholders:_
+###### - _Stakeholders:_
 
-###### _Benefits & Harms:_
+###### - _Benefits & Harms:_
 
-##### 3.0 Research questions | 3-5 research questions. What motivates the questions? Why are they important? See the Deign Brief, section B.4. (about 150 words) |
+##### 3.0 Research questions: What motivates the questions? Why are they important? See the Deign Brief, section B.4. (about 150 words)
 
-##### 4.0 The Dataset | See Design Brief, setions B.5 (_Size and complexity_) and B.6 (_Data provenance_). Use short sub-sections for describing the size and complexity of the dataset and for describing the origins fo the data. (about 400 words) |
+###### ***Q.1***  
 
-##### 5.0 Expected Implications | Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (about 150 words) |
+###### ***Q.2***
 
-##### 6.0 Limitations | What limitations might you need to address? Briefly discuss. (about 150 words) |
+###### ***Q.3***
 
-##### Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
+##### 4.0 The Dataset | See Design Brief, setions B.5 (_Size and complexity_) and B.6 (_Data provenance_) (about 400 words)
+(describe size/complexity: Number of Rows/Records, Number of Attributes/Features,Origins of Data)
 
-##### References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
-|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
+
+- Who/what is represented in the data
+- what is an observation? What variables are included/excluded
+- Who collected the data? When? For what purpose? How was the data collection effort funded? Who is likely to benefit from the data or make money?  
+- How was the data validated and held secure? Is it credible/trustworthy?
+- How did you obtain the data? Do you credit the source of the data?
+
+##### 5.0 Expected Implications: describe the expected or possible implications for technologists, designers, and policymakers. (about 150 words)
+
+##### 6.0 Limitations: What limitations might you need to address? Briefly discuss. (about 150 words)
+
+##### Acknowledgements: thank someone
+
+##### References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. | 
+
+##### Appendix A: questions here
