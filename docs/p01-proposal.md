@@ -12,8 +12,7 @@
 * **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
-
-##### Code name: Trans-Data
+###### Code name: Trans-Data
 
 ##### Project title: Trans Rights Research
 
@@ -75,6 +74,14 @@ Use short sub-sections to describe your topic and the setting (that is, the soci
 
 ##### Acknowledgements: thank someone
 
-##### References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. | 
+##### References
 
-##### Appendix A: questions here
+- _Study shows shocking rates of attempted suicide among Trans Teens_. HRC. (n.d.). https://www.hrc.org/news/new-study-reveals-shocking-rates-of-attempted-suicide-among-trans-adolescen
+
+- Unger, C. A. (2016, December). _Hormone therapy for transgender patients_. Translational andrology and urology. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5182227/
+
+- Rangel, A. (2022, February 2). _A blueprint for reform: Police and transgender rights_. The Crime Report. https://thecrimereport.org/2022/02/02/a-blueprint-for-reform-police-and-transgender-rights/
+
+- _Understanding the transgender community_. HRC. (n.d.). https://www.hrc.org/resources/understanding-the-transgender-community
+
+##### Appendix A: Questions Do you have questions for your TA or instructor?  
