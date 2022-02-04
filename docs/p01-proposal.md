@@ -57,7 +57,7 @@ What effect will this data on suicide rates, trans hate crimes, and lack of medi
 ##### 4.0 The Dataset | See Design Brief, setions B.5 (_Size and complexity_) and B.6 (_Data provenance_) (about 400 words)
 (describe size/complexity: Number of Rows/Records, Number of Attributes/Features,Origins of Data)
 
-
+Trans-Care-by-state: from https://www.lgbtmap.org/equality-maps/healthcare_laws_and_policies using the Wayback Machine at https://web.archive.org/ to approximate dates. Pinning down dates before may 5th 2015 WIP
 - Who/what is represented in the data
 - what is an observation? What variables are included/excluded
 - Who collected the data? When? For what purpose? How was the data collection effort funded? Who is likely to benefit from the data or make money?  
