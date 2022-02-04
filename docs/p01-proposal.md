@@ -67,8 +67,8 @@ What effect will this data on suicide rates, trans hate crimes, and lack of medi
 ##### 5.0 Expected Implications
 A significant implication from our research questions for policymakers would be that something needs to change. The trans population deserves equal care and medical access towards their transitioning process. There would also be profound implications towards those who believe the hate crimes inflicted upon trans are justified. It would show that their words and actions have detrimental effects on fellow human beings. We would expect our dataset to have the most significant impact on policymakers. They would be the ones to listen to what needs to change, and they’re the only ones with the power to do so legally.
 
-##### 6.0 Limitations: What limitations might you need to address? Briefly discuss. (about 150 words)
-A large limitation we face with this topic is a limited pool of information on our given choice.
+##### 6.0 Limitations
+A considerable limitation we face with this topic is a limited pool of information on our choice. We want to make sure we deliver an adequate and effective amount of data to get the outcome we're anticipating. If we don't provide it in a way that's easy for everyone to understand the message we're portraying, we would have failed in the goal we're attempting to meet in raising attention on the injustices towards transgender people.
 
 ###### Acknowledgements
 We would like to thank our fellow peers for helping us find some data sets.
