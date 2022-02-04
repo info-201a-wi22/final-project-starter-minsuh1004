@@ -1,17 +1,5 @@
 # Trans Rights Research: Project Proposal
 
-**TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
-
-## Developer Notes
-
-* **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
-* **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
-* **Questions?** If you have questions, please ask your TA or post on Teams.
-
 ###### Code name: Trans-Data
 
 ##### Project title: Trans Rights Research
@@ -38,19 +26,19 @@ Our main question is how the availability of trans healthcare regarding medicall
 
 
 ##### 1.0 Introduction  (about 150 words)
-The main goal of our project is to analyze data on relationship between the impacts of transphobic hate crimes and rate of trans population suicides. We’re also looking into the availability of trans healthcare in regards of medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the affects of limited availability to transition healthcare on trans suicides.
+The main goal of our project is to analyze data on the relationship between the impacts of transphobic hate crimes and the rate of trans population suicides. We’re also looking into the availability of trans healthcare regarding medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the effects of limited availability to transition healthcare on trans suicides. We’re using the data sets to show the increasing number of suicides with trans hate crimes.
 
 
 ##### 2.0 Design Situation: You may find it helpful to include a figure.  (about 400 words)
 
 ###### - _Framing the topic of concern:_
-The topic of concern is the effect of availability of trans healthcare on the trans population in relation to trans suicides. A key element would be trans rights. This is solely a social justice involving a hindrance on trans peoples' ability to fully transition. 
+The topic of concern is the effect of the availability of trans healthcare on the trans population concerning trans suicides. A key element would be trans rights. Trans rights are solely a social justice that hinders trans peoples' ability to transition fully.
 
 ###### - _Human Values:_
-The main human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools and accessibility to transition, so as to allow them to be who they are. We chose this topic to draw attention to the issues surrounding trans rights and to emphasize the detrimental results these hate crimes can have.
+The principal human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools to transition to being who they are. We chose this topic to draw attention to the issues surrounding trans rights and emphasize the detrimental results of these hate crimes. A considerable tension from this could be those who don’t believe in providing the trans populous access to medical care because of their ignorance.
 
 ###### - _Stakeholders:_
-The direct stakeholders of our topic is the general population. We're motivated towards raising awareness on injustices towards trans people which are resulting in suicides. We're also bringing to light the problems surrounding the lack of availability of trans healthcare. Indirect stakeholders could be the policy makers who can make a difference in making trans healthcare accessible for everyone. Other stakeholders include those within the medical field. By displaying all this information, it may incite some advocates within the field to open up the possibilities of change.
+The direct stakeholders of our topic are the general population. We're motivated to raise awareness on injustices towards trans people, resulting in increasing numbers of suicides. We're also bringing to light the problems surrounding the lack of availability of trans healthcare. Indirect stakeholders could be policymakers who can make a difference in making trans healthcare accessible for everyone. Other stakeholders include those within the medical field. By displaying all this information, it may incite some advocates within the specific work field to open up the possibilities of change.
 
 ###### - _Benefits & Harms:_
 A potential benefit would be a change surrounding availability of trans healthcare. If this information were to incite any positive outcome, this would be by far the greatest. It would mean that the data we presented incited some feelings of action and realization that something must be done.
@@ -77,10 +65,12 @@ Some unanticipated consequences...
 ##### 5.0 Expected Implications: describe the expected or possible implications for technologists, designers, and policymakers. (about 150 words)
 
 ##### 6.0 Limitations: What limitations might you need to address? Briefly discuss. (about 150 words)
+A large limitation we face with this topic is a limited pool of information on our given choice.
 
-##### Acknowledgements: thank someone
+###### Acknowledgements:
+We would like to thank our fellow peers for helping us find some data sets.
 
-##### References
+###### References
 
 - _Study shows shocking rates of attempted suicide among Trans Teens_. HRC. (n.d.). https://www.hrc.org/news/new-study-reveals-shocking-rates-of-attempted-suicide-among-trans-adolescen
 
