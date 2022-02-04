@@ -26,7 +26,7 @@ Our main question is how the availability of trans healthcare regarding medicall
 
 
 ##### 1.0 Introduction  (about 150 words)
-The main goal of our project is to analyze data on relationship between the impacts of transphobic hate crimes and rate of trans population suicides. We’re also looking into the availability of trans healthcare in regards of medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the affects of limited availability to transition healthcare on trans suicides.
+The main goal of our project is to analyze data on the relationship between the impacts of transphobic hate crimes and the rate of trans population suicides. We’re also looking into the availability of trans healthcare regarding medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the effects of limited availability to transition healthcare on trans suicides. We’re using the data sets to show the increasing number of suicides with trans hate crimes. 
 
 
 ##### 2.0 Design Situation: You may find it helpful to include a figure.  (about 400 words)
@@ -35,10 +35,10 @@ The main goal of our project is to analyze data on relationship between the impa
 The topic of concern is the effect of the availability of trans healthcare on the trans population concerning trans suicides. A key element would be trans rights. Trans rights are solely a social justice that hinders trans peoples' ability to transition fully.
 
 ###### - _Human Values:_
-The principal human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools to transition to being who they are. We chose this topic to draw attention to the issues surrounding trans rights and emphasize the detrimental results of these hate crimes.
+The principal human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools to transition to being who they are. We chose this topic to draw attention to the issues surrounding trans rights and emphasize the detrimental results of these hate crimes. A considerable tension from this could be those who don’t believe in providing the trans populous access to medical care because of their ignorance.
 
 ###### - _Stakeholders:_
-The direct stakeholders of our topic are the general population. We're motivated to raise awareness on injustices towards trans people, resulting in suicides. We're also bringing to light the problems surrounding the lack of availability of trans healthcare. Indirect stakeholders could be policymakers who can make a difference in making trans healthcare accessible for everyone. Other stakeholders include those within the medical field. By displaying all this information, it may incite some advocates within the specific work field to open up the possibilities of change.
+The direct stakeholders of our topic are the general population. We're motivated to raise awareness on injustices towards trans people, resulting in increasing numbers of suicides. We're also bringing to light the problems surrounding the lack of availability of trans healthcare. Indirect stakeholders could be policymakers who can make a difference in making trans healthcare accessible for everyone. Other stakeholders include those within the medical field. By displaying all this information, it may incite some advocates within the specific work field to open up the possibilities of change.
 
 ###### - _Benefits & Harms:_
 A potential benefit would be a change surrounding availability of trans healthcare. If this information were to incite any positive outcome, this would be by far the greatest. It would mean that the data we presented incited some feelings of action and realization that something must be done.
