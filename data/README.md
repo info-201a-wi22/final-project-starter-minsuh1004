@@ -5,10 +5,10 @@ In our project, we use the following data files and Application Programming Inte
 ### Data files (TODO: Update/delete)
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[TDoR-Data-All.csv](./TDoR-Data-All.csv) | Contains records of transgender deaths from 1970 to today, including location and cause of death
-|[hate_crime.csv](./hate_crime.csv) | Contains records of hate crimes as recorded by the FBI since 1991
-
+|[TDoR-Data-All.csv](./TDoR-Data-All.csv) | Contains records of transgender deaths from 1970 to 2020, including location and cause of death
+|[hate_crime.csv](./hate_crime.csv) | Contains records of hate crimes as recorded by the FBI since 1991 till 2020
+|[Trans-Care-by-state](./Trans-Care-by-state.csv) | manually compiled records from https://www.lgbtmap.org/equality-maps/healthcare_laws_and_policies using the Wayback Machine at https://web.archive.org/ to approximate dates. WIP
+//Look for data set of informed concent for hrt over time
 ### Application Programming Interfaces (API) (TODO: Update/delete)
 
 * **New York Times Books API**. The _New York Times_ provides data for Best
