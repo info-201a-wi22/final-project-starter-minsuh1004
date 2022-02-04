@@ -44,7 +44,7 @@ The main goal of our project is to analyze data on relationship between the impa
 ##### 2.0 Design Situation: You may find it helpful to include a figure.  (about 400 words)
 
 ###### - _Framing the topic of concern:_
-The topic of concern is the effect of availability of trans healthcare on the trans population in relation to trans suicides. A key element would be trans rights. This is solely a social justice involving a hinderance on trans peoples' ability to fully transition. 
+The topic of concern is the effect of availability of trans healthcare on the trans population in relation to trans suicides. A key element would be trans rights. This is solely a social justice involving a hindrance on trans peoples' ability to fully transition. 
 
 ###### - _Human Values:_
 The main human value we're emphasizing with our chosen topic is equal rights and accepting people for who they are. These values come from providing trans people with the medical tools and accessibility to transition, so as to allow them to be who they are. We chose this topic to draw attention to the issues surrounding trans rights and to emphasize the detrimental results these hate crimes can have.
