@@ -8,7 +8,7 @@
 - Minsuh Kim (msk812@uw.edu)
 - Faith Greene (bag01@uw.edu)
 - Hana Pham (hanapham@uw.edu)
-- Fila Mohamed (f10@uw.edu)
+- Fila Mohamed (fila10@uw.edu)
 
 ##### Affiliation
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
