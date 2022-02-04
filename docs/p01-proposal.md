@@ -26,10 +26,10 @@ Our main question is how the availability of trans healthcare regarding medicall
 
 
 ##### 1.0 Introduction
-The main goal of our project is to analyze data on the relationship between the impacts of transphobic hate crimes and the rate of trans population suicides. We’re also looking into the availability of trans healthcare regarding medical transitioning. With this project, we hope to shed light on the struggles placed upon trans people because this is a topic that often gets overlooked. We also hope to show the effects of limited availability to transition healthcare on trans suicides. We’re using the data sets to show the increasing number of suicides with trans hate crimes.
+Our project takes on Trans rights and their overall livelihood in the United States. The trans community has been subject to oppression both on social media and in real life. We as a group have decided to shed light on issues specifically in the trans community that is affected by outside factors. Some of these factors include hate crimes and lack of medical resources or support related to the patient's choice of transitioning. We are connecting and comparing these outside factors mentioned to the rate of suicide in the trans community. Our data set will consist of hate crime(against trans) count in various months; also, a second data source will contain the number of self-harm within the community each month. We will make sure to update our data as our questions become specific, and as such, we can retrieve our answers from each data source.
 
 
-##### 2.0 Design Situation: You may find it helpful to include a figure.  (about 400 words)
+##### 2.0 Design Situation: You may find it helpful to include a figure.
 
 ###### - _Framing the topic of concern:_
 The topic of concern is the effect of the availability of trans healthcare on the trans population concerning trans suicides. A key element would be trans rights. Trans rights are solely a social justice that hinders trans peoples' ability to transition fully.
@@ -65,7 +65,7 @@ The last dataset is compiled by Faith Greene (me) from https://www.lgbtmap.org/e
 A significant implication from our research questions for policymakers would be that something needs to change. The trans population deserves equal care and medical access towards their transitioning process. There would also be profound implications towards those who believe the hate crimes inflicted upon trans are justified. It would show that their words and actions have detrimental effects on fellow human beings. We would expect our dataset to have the most significant impact on policymakers. They would be the ones to listen to what needs to change, and they’re the only ones with the power to do so legally.
 
 ##### 6.0 Limitations
-A considerable limitation we face with this topic is a limited pool of information on our choice. We want to make sure we deliver an adequate and effective amount of data to get the outcome we're anticipating. If we don't provide it in a way that's easy for everyone to understand the message we're portraying, we would have failed in the goal we're attempting to meet in raising attention on the injustices towards transgender people.
+A considerable limitation we face with this topic is a limited pool of information on our choice. We want to make sure we deliver an adequate and effective amount of data to get the outcome we're anticipating. If we don't provide the data in a way that's easy for everyone to understand the message we're portraying, we would have failed in the goal we're attempting to meet in raising attention on the injustices towards transgender people. We’re limited in the types of data sets, not just the amount of data. We want to find ones that can show the relationship between trans hate crimes and the lack of social and medical support for the transgender community. 
 
 ###### Acknowledgements
 We would like to thank our fellow peers for helping us find some data sets.
