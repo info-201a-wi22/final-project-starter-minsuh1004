@@ -8,7 +8,7 @@ In our project, we use the following data files and Application Programming Inte
 |[TDoR-Data-All.csv](./TDoR-Data-All.csv) | Contains records of transgender deaths from 1970 to 2020, including location and cause of death
 |[hate_crime.csv](./hate_crime.csv) | Contains records of hate crimes as recorded by the FBI since 1991 till 2020
 |[Trans-Care-by-state](./Trans-Care-by-state.csv) | manually compiled records of when various states passed various trans healthcare related bills (see report for details)
-//Look for data set of informed concent for hrt over time
+
 ### Application Programming Interfaces (API) (TODO: Update/delete)
 
 * **New York Times Books API**. The _New York Times_ provides data for Best
