@@ -10,6 +10,7 @@ dates <- seq(as.Date("2015-05-07"), as.Date("2021-01-01"), by="days")
 to_add <- c("Date")
 result <- data.frame(t(append(to_add, data$STATE)))
 colnames(result) <- append(to_add, data$STATE)
+count <- 1
 for(date in dates){
   score1 <- c()
   for(value in data$Date.of.Antidiscrimition.bill.for.trans.people.in.private.healthcare){
@@ -81,8 +82,11 @@ for(date in dates){
     }
   }
   total <- score1 + score2 + score3 + score4
-  text_date <- as.character(date)
-  resultant <- append(c(text_date), total)
+  print(count)
+  temp <- as.character(dates[count])
+  print(temp)
+  count <- count + 1
+  resultant <- append(c(temp), total)
   temp_row <- as.data.frame(t(resultant))
   colnames(temp_row) <- append(to_add, data$STATE)
   result <- rbind(result, temp_row)

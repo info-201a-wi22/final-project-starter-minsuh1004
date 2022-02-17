@@ -15,6 +15,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Please see Canvas for more details.
 
+## Summary
+```{r, echo = FALSE}
+source("../source/Summary.R")
+to_show1 <- in_summary$hate_crime_by_state[44, ]
+to_show2 <- in_summary$hate_crime_by_state[37,]
+trend_one <- str_glue("For hate crimes:", in_summary$hate_crime_by_year[1,1],in_summary$hate_crime_by_year[1,2], "to", in_summary$hate_crime_by_year[8,1],in_summary$hate_crime_by_year[8,2], sep = "  ")
+trend_two <- str_glue("For sucides:", in_summary$death_by_sc_by_year[1,1],  in_summary$death_by_sc_by_year[1,2],"to", in_summary$death_by_sc_by_year[7,1], in_summary$death_by_sc_by_year[7,2], sep = "  ")
+```
+So, in the course of summarizing the data, some observations/realizations were had: firstly, there is a strong trend for increase in both hate crimes and suicides over time(`r trend_one` and `r trend_two`), and, secondly, our data is sorely lacking for ***all*** cases only 894 meaningful observations from the FBI database, because LGBT hate crimes were lumped together before 2013, only 606 observations of fatalities from hate crimes and suicides from TDoR. Now according to [UCLA School of law, Williams intitute](https://williamsinstitute.law.ucla.edu/publications/trans-adults-united-states/) about 1.4 million *adults* are trans in the US, so according to our data sets, then only __.063%__ of trans people experience hate crimes, and while I'd love for this to be true, I cannot believe this to be the case as of right now. So, I started delving into hate crimes by state, and a damning picture started to emerge.
+So I'll just compare two points for now, but in the table, you will be able to see this pattern, `r to_show1` as compared to `r to_show2` doesn't make sense, why would Washington, one of the most trans accepting places in the US have more hate crimes than South Carolina, a state deep in the bible belt? But then you consider: reporting, in Washington, a pretty accepting place, more people are likely to report a hate crime as one, due to more trust in the system to not turn against them as compared to South Carolina. Now this isn't just damning to the nation, but also this project, because it means none of our data is going to be accurate in its current form, and conclusions drawn from it are going to have heavy asterisks attached. Were we to have more time to dedicate to data collection more time to try to figure out roughly how much has gone unreported, and more people to help, perhaps it would be different, but as it stands right now you ***SHOULD NOT*** trust this project, at all. 
+
+### Summary Table
+```{r, echo = FALSE}
+source("../source/Summary-table.R")
+library("knitr")
+kable(tables$by_year_table)
+```
+This first table is an example of the trend I talked about in the summary, the more recent, the more data we have.
+
+```{r, echo = FALSE}
+source("../source/Summary-table.R")
+library("knitr")
+kable(tables$by_state_table)
+```
+For the state bias we can find it here, use the average score and you're own knowledge of what states are like to see the problem I talked about with reporting.
 ## ACCESSING THE /source DIRECTORY
 ### Example 1: Source some code and run a function
 ```{r}
