@@ -20,5 +20,6 @@ ggplot(death_category_us) +
     mapping = aes(x = Year, y = Deaths, fill = Category)
     ) +
   labs(
-    title = "Number of Trans-Gender People Deaths per Year"
+    title = "Number of Trans-Gender People Deaths per Year",
+    y = "Number of Deaths"
   )
