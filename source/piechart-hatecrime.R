@@ -46,7 +46,7 @@ print(pie_chart_hatecrimes <-
         ggplot(table_by_state, aes( x = "" , y = n, fill = STATE_ABBR)) +
         geom_col(color = "white") +
         labs(
-          title = "Number of gay hate crimes by state",
+          title = "Number Of Gay Hate Crimes By State",
           y = "Number of hate crimes",
           fill = "States Abbreviated"
         ) +
