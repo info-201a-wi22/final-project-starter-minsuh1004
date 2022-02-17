@@ -5,6 +5,7 @@ library("plotly")
 
 data_tdor <- read.csv("../data/TDoR-Data-All.csv")
 
+# Number of Deaths per Category Data Frame
 death_category_us <- data_tdor %>%
   filter(Country == "USA") %>%
   mutate(Year = str_sub(Date, -2, -1)) %>%
@@ -12,9 +13,9 @@ death_category_us <- data_tdor %>%
   group_by(Year) %>%
   select(Year, Category) %>%
   count(Category) %>%
-  rename(Deaths = n) %>%
-  gather(key = Category, value = Deaths)
-  
+  rename(Deaths = n)
+
+# Data Visualization
 ggplot(death_category_us) +
   geom_col(
     mapping = aes(x = Year, y = Deaths, fill = Category)
