@@ -9,10 +9,6 @@ In our project, we use the following data files and Application Programming Inte
 |[hate_crime.csv](./hate_crime.csv) | Contains records of hate crimes as recorded by the FBI since 1991 till 2020
 |[Trans-Care-by-state](./Trans-Care-by-state.csv) | manually compiled records of when various states passed various trans healthcare related bills (see report for details)
 
-### Application Programming Interfaces (API) (TODO: Update/delete)
-
-* **New York Times Books API**. The _New York Times_ provides data for Best
-Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
 
 # NOTE 1: About the `/data` Directory
 
