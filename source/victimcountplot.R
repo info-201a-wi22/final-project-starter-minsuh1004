@@ -10,11 +10,12 @@ library(ggplot2)
 
 # Data Visualization:  
 
-victim_count_by_year <-
-  ggplot(data = hate_crime) + 
+  
+victim_count_plot <- ggplot(data = hate_crime) + 
     geom_point(mapping = aes(
-      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)
-    ) 
+      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
+      
+     
    
  
  
