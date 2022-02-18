@@ -129,10 +129,10 @@ As i was creating this pie chart in relation to what faith is talking about, its
 You can also embed plots, for example:
 
 ```{r victim_count_plot, echo=FALSE}
-``` source("../source/victimcountplot.R")
-  library(plotly)
-  library(ggplot2) 
+source("../source/victimcountplot.R")
+  library("plotly")
+  library("ggplot2") 
 ggplot(data = hate_crime) + 
     geom_point(mapping = aes(
       x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```
