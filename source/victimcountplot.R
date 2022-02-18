@@ -4,18 +4,18 @@ people_data <- read.csv("../data/TDoR-Data-All.csv")
 
 
 
+<<<<<<< HEAD
 install.packages("plotly") 
 library("plotly")
 library("ggplot2")
+=======
+install.packages("plotly")
+library(plotly)
+library(ggplot2)
+>>>>>>> f308be852449f11a45299bb8b255963a921b0364
 
 # Data Visualization:  
 victim_count_plot <- ggplot(data = hate_crime) + 
     geom_point(mapping = aes(
       x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
-      
-     
-   
- 
- 
-
-  
+victim_count_plot

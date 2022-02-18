@@ -1,7 +1,7 @@
-library("ggplot2")
-library("tidyr")
-library("tidyverse")
-library("plotly")
+library(ggplot2)
+library(tidyr)
+library(tidyverse)
+library(plotly)
 
 data_tdor <- read.csv("../data/TDoR-Data-All.csv")
 
