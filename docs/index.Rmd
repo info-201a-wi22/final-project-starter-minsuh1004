@@ -108,7 +108,7 @@ kable(tables$by_state_table)
 For the state bias we can find it here, use the average score and you're own knowledge of what states are like to see the problem I talked about with reporting.
 
 ### Chart 1 :
-```{r,echo=FALSE}
+```{r hate_crime_plot,echo = FALSE}
 source("../source/piechart-hatecrime.R")
 pie_chart_hatecrimes <- ggplot(table_by_state, aes( x = "" , y = n, fill = STATE_ABBR)) +
   geom_col(color = "white") +
@@ -124,15 +124,28 @@ pie_chart_hatecrimes <- ggplot(table_by_state, aes( x = "" , y = n, fill = STATE
 As i was creating this pie chart in relation to what faith is talking about, its important to understand that the initialization of trans hate crime as a category is very recent and up until 2013 it has been combined with gay hate crimes. Nonetheless its important to analyze the proportion of gay hate crimes by state. This insight allows to assesses the relationship between gay hate crimes and the table of state scores allowing you to see where the disparities align.
 
 
-## Plots 
-
-You can also embed plots, for example:
-
-```{r victim_count_plot, echo=FALSE}
+## Chart 2 :
+```{r victim_count_plot, echo = FALSE}
 source("../source/victimcountplot.R")
-  library("plotly")
-  library("ggplot2") 
+  library(plotly)
+  library(ggplot2) 
 ggplot(data = hate_crime) + 
     geom_point(mapping = aes(
       x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
+```
+
+
+
+
+## Chart 3 :
+```{death_category_plot, echo = FALSE}
+source("../source/death-category-us.R")
+ggplot(death_category_us) +
+  geom_col(
+    mapping = aes(x = Year, y = Deaths, fill = Category)
+    ) +
+  labs(
+    title = "Number of Trans-Gender People Deaths per Year",
+    y = "Number of Deaths"
+  )
 ```
