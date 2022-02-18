@@ -3,7 +3,6 @@ title: "Trans Rights Research"
 author: "Faith Greene, Minsuh Kim, Fila Mohamed, Hana Pham"
 date: "2/16/2022"
 output:
-  word_document: default
   html_document: default
 ---
 
@@ -125,11 +124,7 @@ As I was creating this pie chart in relation to what Faith is talking about, its
 ## Chart 2 :
 ```{r victim_count_plot, echo = FALSE}
 source("../source/victimcountplot.R")
-victim_count_plot <- ggplot(hate_crime) + 
-    geom_point(mapping = aes(x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) +
-  labs(title = "Victim Count by Region", 
-       x = "Year",
-       y = "Number of Victims")
+victim_count_plot_to_show <- victim_count_plot
 ```
   This scatter plot was meant to show the trends of the number of victim counts, from year 1990 to 2020, by varying regions of the United States. Something important about this data visualization are the different colors, which each represent a different region. It can show the distribution of regions that have more victims than others, simply by looking at the more pertinent colors. This data is meant to bring light to concentrated areas in the United States that still struggle with equal rights for the trans population, who are still victims of violence and hate crimes. 
 

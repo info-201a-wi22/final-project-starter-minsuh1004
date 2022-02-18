@@ -3,7 +3,7 @@ hate_crime <- read.csv("../data/hate_crime.csv")
 people_data <- read.csv("../data/TDoR-Data-All.csv") 
 
 
-install.packages("plotly") 
+#install.packages("plotly") 
 library("plotly")
 library("ggplot2")
 
@@ -13,4 +13,4 @@ victim_count_plot <- ggplot(hate_crime) +
   labs(title = "Victim Count by Region", 
        x = "Year",
        y = "Number of Victims")
-
+print(victim_count_plot)
