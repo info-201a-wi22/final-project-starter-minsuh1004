@@ -120,36 +120,19 @@ pie_chart_hatecrimes <- ggplot(table_by_state, aes( x = "" , y = n, fill = STATE
   coord_polar(theta = "y") 
 ```
 
+As I was creating this pie chart in relation to what Faith is talking about, its important to understand that the initialization of trans hate crime as a category is very recent, and up until 2013 it has been combined with gay hate crimes. Nonetheless its important to analyze the proportion of gay hate crimes by state. This insight allows to assess the relationship between trans hate crimes and the table of state scores allowing you to see where the disparities align.
 
-As i was creating this pie chart in relation to what faith is talking about, its important to understand that the initialization of trans hate crime as a category is very recent and up until 2013 it has been combined with gay hate crimes. Nonetheless its important to analyze the proportion of gay hate crimes by state. This insight allows to assesses the relationship between gay hate crimes and the table of state scores allowing you to see where the disparities align.
-
-
-<<<<<<< HEAD
-```{r , echo=FALSE}
-source("../source/victimcountplot.R")
-  library("plotly")
-  library("ggplot2") 
-ggplot(data = hate_crime) + 
-    geom_point(mapping = aes(
-      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME))
-```
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. 
-=======
 ## Chart 2 :
 ```{r victim_count_plot, echo = FALSE}
 source("../source/victimcountplot.R")
-  library(plotly)
-  library(ggplot2) 
-ggplot(data = hate_crime) + 
+print(ggplot(data = hate_crime) + 
     geom_point(mapping = aes(
-      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
+      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME))) 
 ```
-
-
-
+  This scatter plot was meant to show the trends of the number of victim counts, from year 1990 to 2020, by varying regions of the United States. Something important about this data visualization are the different colors, which each represent a different region. It can show the distribution of regions that have more victims than others, simply by looking at the more pertinant colors. This data is meant to bring light to concentrated areas in the United States that still struggle with equal rights for the trans population. 
 
 ## Chart 3 :
-```{death_category_plot, echo = FALSE}
+```{r death_category_plot, echo = FALSE}
 source("../source/death-category-us.R")
 ggplot(death_category_us) +
   geom_col(
@@ -160,4 +143,4 @@ ggplot(death_category_us) +
     y = "Number of Deaths"
   )
 ```
->>>>>>> f308be852449f11a45299bb8b255963a921b0364
+
