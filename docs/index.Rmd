@@ -124,7 +124,7 @@ pie_chart_hatecrimes <- ggplot(table_by_state, aes( x = "" , y = n, fill = STATE
 As i was creating this pie chart in relation to what faith is talking about, its important to understand that the initialization of trans hate crime as a category is very recent and up until 2013 it has been combined with gay hate crimes. Nonetheless its important to analyze the proportion of gay hate crimes by state. This insight allows to assesses the relationship between gay hate crimes and the table of state scores allowing you to see where the disparities align.
 
 
-<<<<<<< HEAD
+## Chart 2 :
 ```{r , echo=FALSE}
 source("../source/victimcountplot.R")
   library("plotly")
@@ -133,17 +133,7 @@ ggplot(data = hate_crime) +
     geom_point(mapping = aes(
       x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME))
 ```
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. 
-=======
-## Chart 2 :
-```{r victim_count_plot, echo = FALSE}
-source("../source/victimcountplot.R")
-  library(plotly)
-  library(ggplot2) 
-ggplot(data = hate_crime) + 
-    geom_point(mapping = aes(
-      x = DATA_YEAR, y =  VICTIM_COUNT, color = REGION_NAME)) 
-```
+
 
 
 
