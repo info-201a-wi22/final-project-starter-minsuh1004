@@ -1,4 +1,4 @@
-library("tidyverse")
+#library("tidyverse")
 
 care_agg <- read.csv("../data/Trans-Care-by-state-aggragate.csv")
 care <- read.csv("../data/Trans-Care-by-state.csv")

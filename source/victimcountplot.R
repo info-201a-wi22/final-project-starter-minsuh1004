@@ -4,7 +4,7 @@ people_data <- read.csv("../data/TDoR-Data-All.csv")
 
 
 #install.packages("plotly") 
-library("plotly")
+#library("plotly")
 library("ggplot2")
 
 
