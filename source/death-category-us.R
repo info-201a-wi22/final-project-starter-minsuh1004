@@ -16,7 +16,7 @@ death_category_us <- data_tdor %>%
   rename(Deaths = n)
 
 # Data Visualization
-ggplot(death_category_us) +
+print(ggplot(death_category_us) +
   geom_col(
     mapping = aes(x = Year, y = Deaths, fill = Category)
     ) +
@@ -24,3 +24,4 @@ ggplot(death_category_us) +
     title = "Number of Trans-Gender People Deaths per Year",
     y = "Number of Deaths"
   )
+)
