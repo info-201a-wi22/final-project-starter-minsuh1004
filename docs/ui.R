@@ -16,24 +16,26 @@ page_one <- tabPanel(
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-  p("This project aims to draw attention to the lack of availability of trans 
-    healthcare regarding medical transitioning and how it impacts the rates of trans
-    suicide and transphobic hate crimes. One of the datasets we used detailed reported 
-    crimes against trans victims. Our second dataset comes from the FBI records anti-trans 
-    hate crimes. We can see a lot of empty data values, but this is a point we're aiming
-    to emphasize: that there is an extreme lack of data on transphobic hate crimes. The 
-    final data set used, compiled by one of the project members, recorded 
-    anti-discrimination laws involving exclusion or inclusion of trans care."), 
-  p("The major issues we're addressing include trans rights, trans suicides, 
-transitioning impacts, and trans hate crimes. We're hoping our dataset can
-answer how availability of trans healthcare impacts rates of trans 
-suicide and transphobic crimes. This information can be helpful for policymakers to
-make decisions ensuring equal opportunities and inform the community on the unjust
-treatment of the trans population. Trans rights is a social justice issue that needs 
-to be brought to light. The numbers and data displayed here quantitify just how dire 
-the situation is surrounding the transgender population."),
-img(src = "https://www.phila.gov/media/20190329155708/Transgender-Flag-700x400.jpg")
-))) 
+      p("This project aims to draw attention to the lack of availability of trans 
+        healthcare regarding medical transitioning and how it impacts the rates of trans
+        suicide and transphobic hate crimes. One of the datasets we used detailed reported 
+        crimes against trans victims. Our second dataset comes from the FBI records anti-trans 
+        hate crimes. We can see a lot of empty data values, but this is a point we're aiming
+        to emphasize: that there is an extreme lack of data on transphobic hate crimes. The 
+        final data set used, compiled by one of the project members, recorded 
+        anti-discrimination laws involving exclusion or inclusion of trans care."), 
+      p("The major issues we're addressing include trans rights, trans suicides, 
+        transitioning impacts, and trans hate crimes. We're hoping our dataset can
+        answer how availability of trans healthcare impacts rates of trans 
+        suicide and transphobic crimes. This information can be helpful for policymakers to
+        make decisions ensuring equal opportunities and inform the community on the unjust
+        treatment of the trans population. Trans rights is a social justice issue that needs 
+        to be brought to light. The numbers and data displayed here quantitify just how dire 
+        the situation is surrounding the transgender population."),
+      img(src = "https://www.phila.gov/media/20190329155708/Transgender-Flag-700x400.jpg")
+    )
+  )
+) 
 
 #Interactive 1 here:
 page_two <- tabPanel(
@@ -64,7 +66,9 @@ page_two <- tabPanel(
         esspecially under reported.",
       textOutput(outputId = "report"),
       plotOutput(outputId = "report_plot")
-)))
+    )
+  )
+)
 
 #Interactive 2 here:
 page_three <- tabPanel()
@@ -81,8 +85,8 @@ page_five <- tabPanel(
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-  p("1. There is a clear issue with our information gathering. Now while our
-    sources are reliable, they are not infalible, and that is made extremely
+      p("1. There is a clear issue with our information gathering. Now while our
+        sources are reliable, they are not infalible, and that is made extremely
     clear throughout this project. Cases and incidents of hate crimes are
     underreported to state and federal agencies, I do not beleive the number of
     sucide fatalities are that low. So the big take away should be that, when it
@@ -90,7 +94,9 @@ page_five <- tabPanel(
     driven approach without doing rigourus data collection yourself"),
   p("2."),
   p("3.")
-)))
+  )
+)
+)
 
 # Report Page here: reiterate PO1 & PO2
 page_six <- tabPanel(
