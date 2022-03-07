@@ -4,7 +4,7 @@ care_agg <- read.csv("../data/Trans-Care-by-state-aggragate.csv")
 care <- read.csv("../data/Trans-Care-by-state.csv")
 crime <- read.csv("../data/hate_crime.csv")
 fatality <- read.csv("../data/TDoR-Data-All.csv")
-crime <- filter(crime, BIAS_DESC == "Anti-Transgender")
+crime <- filter(crime, str_detect(BIAS_DESC, "Anti-Transgender"))
 death_by_hc <- filter(fatality, Country == "USA") %>%
   filter(Category == "violence")
 death_by_sc <- filter(fatality, Country == "USA") %>%

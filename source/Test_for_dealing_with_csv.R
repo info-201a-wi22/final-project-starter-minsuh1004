@@ -94,3 +94,52 @@ for(date in dates){
 View(result)
 result <- result[-c(1),]
 write.csv(result, "../data/Trans-Care-by-state-aggragate.csv", row.names = FALSE)
+#The following is meant to test ideas for a widgit demonstating the reporting problem
+
+crime <- read.csv("../data/hate_crime.csv")
+filtered <- select(crime, c("DATA_YEAR", "STATE_NAME", "BIAS_DESC"))
+anaylsis_1 <- group_by(filtered, BIAS_DESC, STATE_NAME) %>%
+  summarize(NUM_REPORT = n())
+temp <- str_split(anaylsis_1$BIAS_DESC, ";")
+unique_bias <- c("State")
+for (to_check in temp) {
+  for (word in to_check){
+    #print(!(word %in% unique_bias))
+    if(!(word %in% unique_bias)){
+      #print(word)
+      unique_bias <- append(unique_bias, word)
+    }
+  }
+}
+states <- c("")
+for (to_check in anaylsis_1$STATE_NAME) {
+    if(!(to_check %in% states)){
+      #print(word)
+      states <- append(states, to_check)
+    }
+}
+biases <- unique_bias
+new_df <- data.frame(matrix(ncol = length(biases) - 1), nrow = 0)
+colnames(new_df) <- make.names(biases)
+for(state in states){
+  to_work_with <- filter(anaylsis_1, STATE_NAME == state)
+  row_add <- c(state)
+  for(varr in biases){
+    if(varr != "State"){
+      varr <- str_split_fixed(varr, "\\(",2)[1]
+      to_add <- filter(to_work_with, str_detect(BIAS_DESC, varr))
+      to_add <- sum(to_add$NUM_REPORT)
+      row_add <- append(row_add, to_add)
+    }
+  }
+  new_df[nrow(new_df) + 1,] <- row_add
+}
+new_df2 <- new_df[-c(1,2), ]
+write.csv(new_df2,"../data/Attempt_to_Quantify_reporting.csv", row.names = FALSE)
+
+#Plan for widget: take columns with a higher chance of having a less severe reporting
+#problem and use them to create a baseline for each state and see if the anti-transgender
+#reports are below this baseline expectatoin
+census <- read.csv("../data/Census_data.csv")
+q <- read.csv("../data/Queer-pop-by-percent.csv")
+
