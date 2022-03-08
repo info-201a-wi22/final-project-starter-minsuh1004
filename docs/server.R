@@ -118,4 +118,31 @@ server <- function(input, output) {
       geom_col(mapping = aes(x = Bias, y = Percent))
     print(plot)
   })
+  
+  output$death_plot <- renderPlot({
+    deaths <- read.csv("../data/TDoR-Data-All.csv")
+    death_category_usa <- data_tdor %>%
+      filter(Country == "USA") %>%
+      mutate(Year = str_sub(Date, -2, -1)) %>%
+      filter(Year >= "15" & Year <= "20") %>%
+      group_by(Year) %>%
+      select(Year, Category) %>%
+      count(Category) %>%
+      rename(Deaths = n) %>%
+      spread(Category, Deaths) %>%
+      rename(Custodial = custodial, Medical = medical,
+             Suicide = suicide, Uncategorised = uncategorised,
+             Violence = violence)
+    
+    print(ggplot(death_category_usa) +
+            geom_col(
+              mapping = aes(x = Year, y = .data[[input$death_category]])
+            ) +
+            labs(
+              title = paste("Number of Trans-Gender Deaths per Year via",
+                            input$death_category),
+              y = paste("Number of", input$death_category, "Deaths")
+            )
+    )
+  })
 }

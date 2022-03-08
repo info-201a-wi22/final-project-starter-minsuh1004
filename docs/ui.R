@@ -71,7 +71,24 @@ page_two <- tabPanel(
 )
 
 #Interactive 2 here:
-page_three <- tabPanel()
+page_three <- tabPanel(
+  "Deaths",
+  titlePanel("Death by Category"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "death_category",
+        label =  "Different Categories of Trans-Gender Deaths",
+        choices = c("Custodial", "Medical", "Suicide", "Uncategorised",
+                    "Violence")
+      )
+    ),
+    mainPanel(
+      p(""),
+      plotOutput(outputId = "death_plot")
+    )
+  )
+)
 
 #Interactive 3 here: 
 page_four <- tabPanel(
