@@ -116,7 +116,8 @@ server <- function(input, output) {
                  anti_queer * 100, trans_report * 100, state_avg * 100)
     new_df <- data.frame(Bias, Percent)
     plot <- ggplot(data = new_df) +
-      geom_col(mapping = aes(x = Bias, y = Percent))
+      geom_col(mapping = aes(x = Bias, y = Percent)) +
+      ggtitle("Percent of Minority reporting hate crimes against them")
     print(plot)
   })
   
