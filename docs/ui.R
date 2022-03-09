@@ -84,8 +84,15 @@ page_three <- tabPanel(
       )
     ),
     mainPanel(
-      p(""),
-      plotOutput(outputId = "death_plot")
+      p("Reports of several deaths of Trans-Gender people has put a dramatic
+        impact on how Trans people are treated by society. Using the Transgender
+        Day of Remebrance (TDoR) data, we created a chart that displays the
+        number of deaths reported in each year from 2015 to 2020 depending of
+        the category of death that the victims have experienced. Figuring out
+        the number of deaths reported per year may help really determine
+        how Trans people are faring in modern society, especially in relation
+        to trans-gender hate crimes."),
+      plotlyOutput(outputId = "death_plot")
     )
   )
 )
