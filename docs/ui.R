@@ -92,16 +92,38 @@ page_three <- tabPanel(
 
 #Interactive 3 here: 
 page_four <- tabPanel(
-  titlePanel("Interactive 3 Title HERE"),
+  "Trans Care By State and Year",
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(inputId = "year",label = "Choose A Year: ",choices = 
+                    c("2015" = 15,
+                      "2016" = 16,
+                      "2017" = 17,
+                      "2018" = 18,
+                      "2019" = 19,
+                      "2020" = 20),selected = 15)),
+    mainPanel(
+      p("Trans care by state and year is a concept inspired by one of our members(faith) that took the time to maximise
+        the ability for us to visualise our data. In the graph below each state receives a score 1 - 3 based on 3 variables.
+        A point if a state passes a anti discriminatory law in private insurace, a point if a state passes a mandatory
+        inclusion for transition care in private insurance,and a point if a state includes transition care in medicaid.But states also lost a point  
+        when the exclusion of transition care in medicaid was true. This visualization allows for us to get an idea of how our country as a whole has 
+        been evolving when it comes to passing laws in favor of trans care over the years.Its importants to understand that the data collected so far
+        should be acknowledged because a span of 5 years is not a long time but this provides us with a promising foundation
+        as substantial data will be added in the future."),
+      plotOutput("plotpack"),
+      )
+   )
+
+
+
+  
 ) 
 
 # Summary Takeaways here: 
 page_five <- tabPanel(
   "Takeaways",
   titlePanel("Summary Takeways"),
-  sidebarLayout(
-    sidebarPanel(),
-    mainPanel(
       p("1. There is a clear issue with our information gathering. Now while our
         sources are reliable, they are not infalible, and that is made extremely
     clear throughout this project. Cases and incidents of hate crimes are
@@ -110,10 +132,10 @@ page_five <- tabPanel(
     comes to issues like these, there isn't enough aviable data to do a data
     driven approach without doing rigourus data collection yourself"),
   p("2."),
-  p("3.")
-  )
+  p("3."),
+  
 )
-)
+
 
 # Report Page here: reiterate PO1 & PO2
 page_six <- tabPanel(

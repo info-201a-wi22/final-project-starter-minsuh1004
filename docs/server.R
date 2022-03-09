@@ -9,6 +9,7 @@
 
 library(shiny)
 library("tidyverse")
+source("transcarebystate.R")
 server <- function(input, output) {
   output$report <- renderText({
     census <- read.csv("../data/Census_data.csv")
@@ -145,4 +146,82 @@ server <- function(input, output) {
             )
     )
   })
-}
+
+  #interactive for Trans care by state
+    output$plotpack <- renderPlot({
+      if(input$year == 15){
+        #example 2020 data frame to plot
+        long_data_set <- pivot_longer(twenty_15_data,cols = -Date)
+        long_data_set <- long_data_set %>%
+          select(name,value)
+        print(ggplot(long_data_set,aes(x = name, y = value))) +
+          geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+          geom_point() +
+          labs (
+            color = "States",
+            y = "Score",
+            x = "State"
+          )
+      } else if (input$year == 16 ) {
+      long_data_set <- pivot_longer(twenty_16_data,cols = -Date)
+      long_data_set <- long_data_set %>%
+        select(name,value)
+      print(ggplot(long_data_set,aes(x = name, y = value))) +
+        geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+        geom_point() +
+        labs (
+          color = "States",
+          y = "Score",
+          x = "State"
+        )
+      } else if (input$year == 17) {
+        long_data_set <- pivot_longer(twenty_17_data,cols = -Date)
+        long_data_set <- long_data_set %>%
+          select(name,value)
+        print(ggplot(long_data_set,aes(x = name, y = value))) +
+          geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+          geom_point() +
+          labs (
+            color = "States",
+            y = "Score",
+            x = "State"
+          )
+      } else if (input$year == 18) {
+        long_data_set <- pivot_longer(twenty_18_data,cols = -Date)
+        long_data_set <- long_data_set %>%
+          select(name,value)
+        print(ggplot(long_data_set,aes(x = name, y = value))) +
+          geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+          geom_point() +
+          labs (
+            color = "States",
+            y = "Score",
+            x = "State"
+          )
+      } else if (input$year == 19) {
+        long_data_set <- pivot_longer(twenty_19_data,cols = -Date)
+        long_data_set <- long_data_set %>%
+          select(name,value)
+        print(ggplot(long_data_set,aes(x = name, y = value))) +
+          geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+          geom_point() +
+          labs (
+            color = "States",
+            y = "Score",
+            x = "State"
+          )
+      } else {
+        long_data_set <- pivot_longer(twenty_20_data,cols = -Date)
+        long_data_set <- long_data_set %>%
+          select(name,value)
+        print(ggplot(long_data_set,aes(x = name, y = value))) +
+          geom_segment(aes(x = name, xend = name,y = 0, yend = value, color = name)) +
+          geom_point() +
+          labs (
+            color = "States",
+            y = "Score",
+            x = "State"
+          )
+     }
+      })
+  }
