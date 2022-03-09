@@ -14,9 +14,6 @@ c <- read.csv("../data/Census_data.csv")
 page_one <- tabPanel(
   "Introductory Page",
   titlePanel("Introduction"), 
-  sidebarLayout(
-    mainPanel(),
-    mainPanel(
       p("This project aims to draw attention to the lack of availability of trans 
         healthcare regarding medical transitioning, and transphobic hate crimes in relation to
         how it impacts the rates of trans suicide. One of the datasets we used detailed reported 
@@ -33,21 +30,20 @@ page_one <- tabPanel(
         treatment of the trans population. Trans rights is a social justice issue that needs 
         to be brought to light. The numbers and data displayed here quantitify just how dire 
         the situation is surrounding the transgender population."),
-      img(src = "https://www.phila.gov/media/20190329155708/Transgender-Flag-700x400.jpg")
-    )
-  )
+      img(src = "https://www.phila.gov/media/20190329155708/Transgender-Flag-700x400.jpg"),
+  style = "width = 100%"
 ) 
 
 
 page_two <- tabPanel(
   "Reporting",
-  titlePanel("Reporting, a massive problem"),
   sidebarLayout(
     sidebarPanel(
       selectInput(inputId = "state_id", label = "state",
                   choices = c$NAME[2:length(c$NAME)]),
     ),
     mainPanel(
+      h1("Reporting, a massive problem"),
       "Now, it's",
       tags$a(herf = "https://news.northeastern.edu/2021/08/23/why-hate-crimes-are-underreported-and-what-police-departments-have-to-do-with-it/", "well"),
       tags$a(herf = "https://www.policechiefmagazine.org/the-hate-crimes/", " known "),
@@ -66,7 +62,9 @@ page_two <- tabPanel(
         this, it may be able to detirmine if anti-trans hate crimes might be 
         esspecially under reported.",
       textOutput(outputId = "report"),
-      plotOutput(outputId = "report_plot")
+      plotOutput(outputId = "report_plot"),
+      style = "text-align: center"
+      
     )
   )
 )
@@ -74,7 +72,6 @@ page_two <- tabPanel(
 
 page_three <- tabPanel(
   "Deaths",
-  titlePanel("Death by Category"),
   sidebarLayout(
     sidebarPanel(
       selectInput(
@@ -85,6 +82,7 @@ page_three <- tabPanel(
       )
     ),
     mainPanel(
+      h1("Death by Category"),
       p("Reports of several deaths of Trans-Gender people has put a dramatic
         impact on how Trans people are treated by society. Using the Transgender
         Day of Remebrance (TDoR) data, we created a chart that displays the
@@ -93,7 +91,8 @@ page_three <- tabPanel(
         the number of deaths reported per year may help really determine
         how Trans people are faring in modern society, especially in relation
         to trans-gender hate crimes."),
-      plotlyOutput(outputId = "death_plot")
+      plotlyOutput(outputId = "death_plot"),
+      sytle = "text-align: center"
     )
   )
 )
@@ -110,6 +109,7 @@ page_four <- tabPanel(
                       "2019" = 19,
                       "2020" = 20),selected = 15)),
     mainPanel(
+      h1("Trans Care by State, By Year"),
       p("Trans care by state and year is a concept inspired by one of our members(faith) that took the time to maximise
         the ability for us to visualise our data. In the graph below each state receives a score 1 - 3 based on 3 variables.
         A point if a state passes a anti discriminatory law in private insurace, a point if a state passes a mandatory
@@ -119,6 +119,7 @@ page_four <- tabPanel(
         should be acknowledged because a span of 5 years is not a long time but this provides us with a promising foundation
         as substantial data will be added in the future."),
       plotOutput("plotpack"),
+      style = "text-align: center"
       )
    )
 ) 
@@ -126,7 +127,7 @@ page_four <- tabPanel(
 # Summary Takeaways here: 
 page_five <- tabPanel(
   "Takeaways",
-  titlePanel("Summary Takeways"),
+  h1("Summary Takeways"),
       p("1. There is a clear issue with our information gathering. Now while our
         sources are reliable, they are not infalible, and that is made extremely
          clear throughout this project. Cases and incidents of hate crimes are
@@ -177,7 +178,7 @@ page_five <- tabPanel(
 
 page_six <- tabPanel(
   "Report",
-  titlePanel("Report Page"),
+  h1("Report Page"),
   h3("Trans Rights Research"),
   p("Authors: Minsuh Kim- msk812@uw.edu, Faith Greene- bag01@uw.edu, 
 Hana Pham- hana pham@uw.edu, Fila Mohamed- fila10@uw.edu"),
@@ -297,7 +298,8 @@ the mental health resources, and the equal rights as like everyone else in the w
   - Rangel, A. (2022, February 2). A blueprint for reform: Police and transgender rights.
   The Crime Report. https://thecrimereport.org/2022/02/02/a-blueprint-for-reform-police-and-transgender-rights/
   - Understanding the transgender community. HRC. (n.d.). 
-  https://www.hrc.org/resources/understanding-the-transgender-community")
+  https://www.hrc.org/resources/understanding-the-transgender-community"),
+  style = "            background-image: url('bkg.jfif');"
 )
 
 ui <- fluidPage(navbarPage( 
@@ -308,19 +310,22 @@ ui <- fluidPage(navbarPage(
   page_two,
   page_five,
   page_six),
+  tags$head(
   tags$style(HTML(
     '
         body {
             width: 100%;
             margin: auto;
-            background-image: url("bkg.jfif");
+        }
+
+        h3 {
+            text-align: center;
+            color: black;
         }
 
         h1 {
+            color: Black;
             text-align: center;
-        }
-
-        #title {
             display: block;
             margin: auto;
             height: auto;
@@ -344,5 +349,5 @@ ui <- fluidPage(navbarPage(
           color: #fa78d9;
         }
     '
-  ) )
+  ) ) )
 ) 
