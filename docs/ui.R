@@ -14,7 +14,7 @@ page_one <- tabPanel(
   "Introductory Page",
   titlePanel("Introduction"), 
   sidebarLayout(
-    sidebarPanel(),
+    mainPanel(),
     mainPanel(
       p("This project aims to draw attention to the lack of availability of trans 
         healthcare regarding medical transitioning and how it impacts the rates of trans
@@ -92,6 +92,7 @@ page_three <- tabPanel(
 
 #Interactive 3 here: 
 page_four <- tabPanel(
+  "interactive 3",
   titlePanel("Interactive 3 Title HERE"),
 ) 
 
@@ -99,20 +100,50 @@ page_four <- tabPanel(
 page_five <- tabPanel(
   "Takeaways",
   titlePanel("Summary Takeways"),
-  sidebarLayout(
-    sidebarPanel(),
-    mainPanel(
       p("1. There is a clear issue with our information gathering. Now while our
         sources are reliable, they are not infalible, and that is made extremely
-    clear throughout this project. Cases and incidents of hate crimes are
-    underreported to state and federal agencies, I do not beleive the number of
-    sucide fatalities are that low. So the big take away should be that, when it
-    comes to issues like these, there isn't enough aviable data to do a data
-    driven approach without doing rigourus data collection yourself"),
-  p("2."),
-  p("3.")
-  )
-)
+        clear throughout this project. Cases and incidents of hate crimes are
+        underreported to state and federal agencies, the source of our death counts,
+        including sucides, require people remorting and I do not beleive the number of
+        sucide fatalities are that low, and the way we determined trans care avilbiltiy
+        historicly is surface level and only goes back 5 years. Now, all of these failings
+        could be adressed with time and effort: Going and collecting testimony from trans
+        people all across america could solve the reporting issue, but that requries
+        earning trust, and the errors in our dataset for avilibity of transision care
+        could be done with extensive trawls of legistlative history of each state
+        (Georgia copyrigths all their laws so that may be an issue) and of getitng 
+        reports of trans people about how difficult it was when they started. And
+        as you have hopefully seen from these interactabiles, particularly the
+        reporting one, this has vastly impacted our project and it's reliablity.
+        So, the biggest thing we took away from this is a cautionary
+        tale of what happens when you have bad data and not enough time to fix
+        it."),
+      p("2. A general trend we've seen is an uptick in all of our data over time
+        which is to be expected. Because as trans people become more accepted, 
+        they're (we're -Faith) transision related care will become more avilible
+        as old gatekeeping goes by the wayside, but also it means that hate crimes
+        and suicides that would have been swept under the rug now have a better
+        chance of being reported. Now this doesn't disprove our hypothisis, but
+        it doesn't prove it either; when you only have 6 data points (reported suicides) for a period
+        of 20 years and 50 states, you can't make arguments based on trends. So
+        the second takeway is that we still need to work more to use data science to
+        prove this hypothisis. So right now, we're left with the common sense of
+        if you're visible, you're a better target, and life's better when you
+        don't hate your body."),
+      p("3. Now, just looking at the reported hate crimes, the places you (or 
+        at I -Faith) expect to report higher amounts of hate crimes were some
+        of the lowest, and vise versa. Caifornia reports 206 while South Carolina
+        Reports 5 total hate crimes, and if you take a look at Washington and
+        North Carolina you see that Washington seems to have more anti-trans hate
+        crimes per trans capita. So what's up there? Well, that leads us to the 
+        last take away, to use a chapter title from Data Feminism, 'what gets
+        counted counts'. Just think for a second, California and Washington, two
+        firmly democrat controled states (a party who are at least non-hostile to trans
+        people) report more hate crimes than the carolinas which are very conservative
+        (which is a party much more hostile to trans people), how does this make sense
+        are conseravtive controled states more friendly to trans people? *or* are
+        the officails there just more likely to not report transphobic hate crimes?
+        What isn't said is just as important as what is.")
 )
 
 # Report Page here: reiterate PO1 & PO2
@@ -240,11 +271,49 @@ the mental health resources, and the equal rights just like everyone else in the
   https://www.hrc.org/resources/understanding-the-transgender-community")
 )
 
-ui <- navbarPage(
+ui <- fluidPage(navbarPage( 
   "Trans Rights Research",
   page_one,
-  page_two,
   page_three,
   page_four,
+  page_two,
   page_five,
-  page_six) 
+  page_six),
+  tags$style(HTML(
+    '
+        body {
+            width: 100%;
+            margin: auto;
+            background-image: url("bkg.jfif");
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #title {
+            display: block;
+            margin: auto;
+            height: auto;
+            max-width: 100%;
+        }
+        .navbar{
+          background-color: #0ab0f2;
+        }
+        li a{
+            list-style-type: none;
+            color: #fa78d9;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-right: 2px solid #fa78d9;
+            border-left: 2px solid #fa78d9;
+            background-color: #0ab0f2;
+        }
+        
+        a{
+          color: #fa78d9;
+        }
+    '
+  ) )
+) 
