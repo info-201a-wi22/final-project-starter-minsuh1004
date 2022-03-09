@@ -10,6 +10,7 @@
 library(shiny)
 library("plotly")
 c <- read.csv("../data/Census_data.csv")
+
 page_one <- tabPanel(
   "Introductory Page",
   titlePanel("Introduction"), 
@@ -37,7 +38,7 @@ page_one <- tabPanel(
   )
 ) 
 
-#Interactive 1 here:
+
 page_two <- tabPanel(
   "Reporting",
   titlePanel("Reporting, a massive problem"),
@@ -70,7 +71,7 @@ page_two <- tabPanel(
   )
 )
 
-#Interactive 2 here:
+
 page_three <- tabPanel(
   "Deaths",
   titlePanel("Death by Category"),
@@ -97,14 +98,10 @@ page_three <- tabPanel(
   )
 )
 
-#Interactive 3 here: 
-page_four <- tabPanel(
-  "interactive 3",
-  titlePanel("Interactive 3 Title HERE"),
-) 
+
 
 # Summary Takeaways here: 
-page_five <- tabPanel(
+page_four <- tabPanel(
   "Takeaways",
   titlePanel("Summary Takeways"),
       p("1. There is a clear issue with our information gathering. Now while our
@@ -153,8 +150,8 @@ page_five <- tabPanel(
         What isn't said is just as important as what is.")
 )
 
-# Report Page here: reiterate PO1 & PO2
-page_six <- tabPanel(
+
+page_five <- tabPanel(
   "Report",
   titlePanel("Report Page"),
   h3("Trans Rights Research"),
@@ -285,8 +282,7 @@ ui <- fluidPage(navbarPage(
   page_three,
   page_four,
   page_two,
-  page_five,
-  page_six),
+  page_five),
   tags$style(HTML(
     '
         body {
