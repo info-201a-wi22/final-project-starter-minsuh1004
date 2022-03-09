@@ -121,10 +121,6 @@ page_four <- tabPanel(
       plotOutput("plotpack"),
       )
    )
-
-
-
-  
 ) 
 
 # Summary Takeaways here: 
@@ -176,6 +172,8 @@ page_five <- tabPanel(
         the officails there just more likely to not report transphobic hate crimes?
         What isn't said is just as important as what is."))
 
+
+# Report Page here: reiterate PO1 & PO2
 
 page_six <- tabPanel(
   "Report",
@@ -305,8 +303,8 @@ the mental health resources, and the equal rights as like everyone else in the w
 ui <- fluidPage(navbarPage( 
   "Trans Rights Research",
   page_one,
-  page_three,
   page_four,
+  page_three,
   page_two,
   page_five,
   page_six),
