@@ -7,11 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
-library(shiny)
-library(rsconnect)
+library('shiny')
+library('rsconnect')
 
-source("ui.R")
-source("server.R")
+source("docs/ui.R")
+source("docs/server.R")
 
 # Run the application 
 shinyApp(ui = ui, server = server)

@@ -9,12 +9,12 @@
 
 library(shiny)
 library("tidyverse")
-source("transcarebystate.R")
+source("docs/transcarebystate.R")
 server <- function(input, output) {
   output$report <- renderText({
-    census <- read.csv("../data/Census_data.csv")
-    crime_stat <- read.csv("../data/Attempt_to_Quantify_reporting.csv")
-    q_pop <- read.csv("../data/Queer-pop-by-percent.csv")
+    census <- read.csv("data/Census_data.csv")
+    crime_stat <- read.csv("data/Attempt_to_Quantify_reporting.csv")
+    q_pop <- read.csv("data/Queer-pop-by-percent.csv")
     st <- input$state_id
     c_filtered <- filter(census, NAME == st)
     c_filtered[2,] <- census[1,]
@@ -62,9 +62,9 @@ server <- function(input, output) {
   })
   
   output$report_plot <- renderPlot({
-    census <- read.csv("../data/Census_data.csv")
-    crime_stat <- read.csv("../data/Attempt_to_Quantify_reporting.csv")
-    q_pop <- read.csv("../data/Queer-pop-by-percent.csv")
+    census <- read.csv("data/Census_data.csv")
+    crime_stat <- read.csv("data/Attempt_to_Quantify_reporting.csv")
+    q_pop <- read.csv("data/Queer-pop-by-percent.csv")
     st <- input$state_id
     c_filtered <- filter(census, NAME == st)
     c_filtered[2,] <- census[1,]
@@ -121,7 +121,7 @@ server <- function(input, output) {
   })
   
   output$death_plot <- renderPlotly({
-    deaths <- read.csv("../data/TDoR-Data-All.csv")
+    deaths <- read.csv("data/TDoR-Data-All.csv")
     death_category_usa <- deaths %>%
       filter(Country == "USA") %>%
       mutate(Year = str_sub(Date, -2, -1)) %>%

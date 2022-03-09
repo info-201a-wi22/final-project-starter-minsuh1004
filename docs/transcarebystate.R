@@ -2,7 +2,7 @@ library(stringr)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
-tran_care <- read.csv("../data/Trans-Care-by-state-aggragate.csv",stringsAsFactors = FALSE)
+tran_care <- read.csv("data/Trans-Care-by-state-aggragate.csv",stringsAsFactors = FALSE)
 #2020,12,31
 #2019,12,31
 #2018,12,31

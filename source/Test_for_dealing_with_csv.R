@@ -140,6 +140,6 @@ write.csv(new_df2,"../data/Attempt_to_Quantify_reporting.csv", row.names = FALSE
 #Plan for widget: take columns with a higher chance of having a less severe reporting
 #problem and use them to create a baseline for each state and see if the anti-transgender
 #reports are below this baseline expectatoin
-census <- read.csv("../data/Census_data.csv")
+census <- read.csv("data/Census_data.csv")
 q <- read.csv("../data/Queer-pop-by-percent.csv")
 

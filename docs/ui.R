@@ -9,7 +9,7 @@
 
 library(shiny)
 library("plotly")
-c <- read.csv("../data/Census_data.csv")
+c <- read.csv("data/Census_data.csv")
 
 page_one <- tabPanel(
   "Introductory Page",
@@ -152,7 +152,7 @@ page_five <- tabPanel(
         as old gatekeeping goes by the wayside, but also it means that hate crimes
         and suicides that would have been swept under the rug now have a better
         chance of being reported. Now this doesn't disprove our hypothisis, but
-        it doesn't prove it either; when you only have 6 data points (reported suicides) for a period
+        it doesn't prove it either; when you only have 26 data points (reported suicides) for a period
         of 20 years and 50 states, you can't make arguments based on trends. So
         the second takeway is that we still need to work more to use data science to
         prove this hypothisis. So right now, we're left with the common sense of
