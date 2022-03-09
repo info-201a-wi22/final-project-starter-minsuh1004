@@ -97,8 +97,6 @@ page_three <- tabPanel(
     )
   )
 )
-
-<<<<<<< HEAD
 #Interactive 3 here: 
 page_four <- tabPanel(
   "Trans Care By State and Year",
@@ -128,32 +126,14 @@ page_four <- tabPanel(
 
   
 ) 
-=======
-
->>>>>>> 0ef2ded0ada1f4695b58a868f858b8b7b39c5915
 
 # Summary Takeaways here: 
-page_four <- tabPanel(
+page_five <- tabPanel(
   "Takeaways",
   titlePanel("Summary Takeways"),
       p("1. There is a clear issue with our information gathering. Now while our
         sources are reliable, they are not infalible, and that is made extremely
-<<<<<<< HEAD
-    clear throughout this project. Cases and incidents of hate crimes are
-    underreported to state and federal agencies, I do not beleive the number of
-    sucide fatalities are that low. So the big take away should be that, when it
-    comes to issues like these, there isn't enough aviable data to do a data
-    driven approach without doing rigourus data collection yourself"),
-  p("2."),
-  p("3."),
-  
-)
-
-
-# Report Page here: reiterate PO1 & PO2
-page_six <- tabPanel(
-=======
-        clear throughout this project. Cases and incidents of hate crimes are
+         clear throughout this project. Cases and incidents of hate crimes are
         underreported to state and federal agencies, the source of our death counts,
         including sucides, require people remorting and I do not beleive the number of
         sucide fatalities are that low, and the way we determined trans care avilbiltiy
@@ -169,7 +149,7 @@ page_six <- tabPanel(
         So, the biggest thing we took away from this is a cautionary
         tale of what happens when you have bad data and not enough time to fix
         it."),
-      p("2. A general trend we've seen is an uptick in all of our data over time
+  p("2. A general trend we've seen is an uptick in all of our data over time
         which is to be expected. Because as trans people become more accepted, 
         they're (we're -Faith) transision related care will become more avilible
         as old gatekeeping goes by the wayside, but also it means that hate crimes
@@ -181,7 +161,7 @@ page_six <- tabPanel(
         prove this hypothisis. So right now, we're left with the common sense of
         if you're visible, you're a better target, and life's better when you
         don't hate your body."),
-      p("3. Now, just looking at the reported hate crimes, the places you (or 
+  p("3. Now, just looking at the reported hate crimes, the places you (or 
         at I -Faith) expect to report higher amounts of hate crimes were some
         of the lowest, and vise versa. Caifornia reports 206 while South Carolina
         Reports 5 total hate crimes, and if you take a look at Washington and
@@ -194,12 +174,10 @@ page_six <- tabPanel(
         (which is a party much more hostile to trans people), how does this make sense
         are conseravtive controled states more friendly to trans people? *or* are
         the officails there just more likely to not report transphobic hate crimes?
-        What isn't said is just as important as what is.")
-)
+        What isn't said is just as important as what is."))
 
 
-page_five <- tabPanel(
->>>>>>> 0ef2ded0ada1f4695b58a868f858b8b7b39c5915
+page_six <- tabPanel(
   "Report",
   titlePanel("Report Page"),
   h3("Trans Rights Research"),
@@ -330,7 +308,8 @@ ui <- fluidPage(navbarPage(
   page_three,
   page_four,
   page_two,
-  page_five),
+  page_five,
+  page_six),
   tags$style(HTML(
     '
         body {
