@@ -121,7 +121,7 @@ server <- function(input, output) {
   
   output$death_plot <- renderPlot({
     deaths <- read.csv("../data/TDoR-Data-All.csv")
-    death_category_usa <- data_tdor %>%
+    death_category_usa <- deaths %>%
       filter(Country == "USA") %>%
       mutate(Year = str_sub(Date, -2, -1)) %>%
       filter(Year >= "15" & Year <= "20") %>%
