@@ -119,7 +119,7 @@ server <- function(input, output) {
     print(plot)
   })
   
-  output$death_plot <- renderPlot({
+  output$death_plot <- renderPlotly({
     deaths <- read.csv("../data/TDoR-Data-All.csv")
     death_category_usa <- deaths %>%
       filter(Country == "USA") %>%
