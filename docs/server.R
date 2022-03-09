@@ -161,7 +161,7 @@ server <- function(input, output) {
             color = "States",
             y = "Score",
             x = "State",
-            title = "Scores for Trans Care in States"
+            title = "Scores For Trans Care In States"
           )
       } else if (input$year == 16 ) {
       long_data_set <- pivot_longer(twenty_16_data,cols = -Date)
@@ -174,7 +174,7 @@ server <- function(input, output) {
           color = "States",
           y = "Score",
           x = "State",
-          title = "Scores for Trans Care in States"
+          title = "Scores For Trans Care In States"
         )
       } else if (input$year == 17) {
         long_data_set <- pivot_longer(twenty_17_data,cols = -Date)
@@ -187,7 +187,7 @@ server <- function(input, output) {
             color = "States",
             y = "Score",
             x = "State",
-            title = "Scores for Trans Care in States"
+            title = "Scores For Trans Care In States"
           )
       } else if (input$year == 18) {
         long_data_set <- pivot_longer(twenty_18_data,cols = -Date)
@@ -200,7 +200,7 @@ server <- function(input, output) {
             color = "States",
             y = "Score",
             x = "State",
-            title = "Scores for Trans Care in States"
+            title = "Scores For Trans Care In States"
           )
       } else if (input$year == 19) {
         long_data_set <- pivot_longer(twenty_19_data,cols = -Date)
@@ -213,7 +213,7 @@ server <- function(input, output) {
             color = "States",
             y = "Score",
             x = "State",
-            title = "Scores for Trans Care in States"
+            title = "Scores For Trans Care In States"
           )
       } else {
         long_data_set <- pivot_longer(twenty_20_data,cols = -Date)
