@@ -10,15 +10,16 @@
 library(shiny)
 library("plotly")
 c <- read.csv("../data/Census_data.csv")
+
 page_one <- tabPanel(
   "Introductory Page",
   titlePanel("Introduction"), 
   sidebarLayout(
-    sidebarPanel(),
+    mainPanel(),
     mainPanel(
       p("This project aims to draw attention to the lack of availability of trans 
-        healthcare regarding medical transitioning and how it impacts the rates of trans
-        suicide and transphobic hate crimes. One of the datasets we used detailed reported 
+        healthcare regarding medical transitioning, and transphobic hate crimes in relation to
+        how it impacts the rates of trans suicide. One of the datasets we used detailed reported 
         crimes against trans victims. Our second dataset comes from the FBI records anti-trans 
         hate crimes. We can see a lot of empty data values, but this is a point we're aiming
         to emphasize: that there is an extreme lack of data on transphobic hate crimes. The 
@@ -26,8 +27,8 @@ page_one <- tabPanel(
         anti-discrimination laws involving exclusion or inclusion of trans care."), 
       p("The major issues we're addressing include trans rights, trans suicides, 
         transitioning impacts, and trans hate crimes. We're hoping our dataset can
-        answer how availability of trans healthcare impacts rates of trans 
-        suicide and transphobic crimes. This information can be helpful for policymakers to
+        answer how availability of trans healthcare and transphobic crimes impacts rates of trans 
+        suicide. This information can be helpful for policymakers to
         make decisions ensuring equal opportunities and inform the community on the unjust
         treatment of the trans population. Trans rights is a social justice issue that needs 
         to be brought to light. The numbers and data displayed here quantitify just how dire 
@@ -37,7 +38,7 @@ page_one <- tabPanel(
   )
 ) 
 
-#Interactive 1 here:
+
 page_two <- tabPanel(
   "Reporting",
   titlePanel("Reporting, a massive problem"),
@@ -70,7 +71,7 @@ page_two <- tabPanel(
   )
 )
 
-#Interactive 2 here:
+
 page_three <- tabPanel(
   "Deaths",
   titlePanel("Death by Category"),
@@ -84,12 +85,20 @@ page_three <- tabPanel(
       )
     ),
     mainPanel(
-      p(""),
-      plotOutput(outputId = "death_plot")
+      p("Reports of several deaths of Trans-Gender people has put a dramatic
+        impact on how Trans people are treated by society. Using the Transgender
+        Day of Remebrance (TDoR) data, we created a chart that displays the
+        number of deaths reported in each year from 2015 to 2020 depending of
+        the category of death that the victims have experienced. Figuring out
+        the number of deaths reported per year may help really determine
+        how Trans people are faring in modern society, especially in relation
+        to trans-gender hate crimes."),
+      plotlyOutput(outputId = "death_plot")
     )
   )
 )
 
+<<<<<<< HEAD
 #Interactive 3 here: 
 page_four <- tabPanel(
   "Trans Care By State and Year",
@@ -119,13 +128,17 @@ page_four <- tabPanel(
 
   
 ) 
+=======
+
+>>>>>>> 0ef2ded0ada1f4695b58a868f858b8b7b39c5915
 
 # Summary Takeaways here: 
-page_five <- tabPanel(
+page_four <- tabPanel(
   "Takeaways",
   titlePanel("Summary Takeways"),
       p("1. There is a clear issue with our information gathering. Now while our
         sources are reliable, they are not infalible, and that is made extremely
+<<<<<<< HEAD
     clear throughout this project. Cases and incidents of hate crimes are
     underreported to state and federal agencies, I do not beleive the number of
     sucide fatalities are that low. So the big take away should be that, when it
@@ -139,6 +152,54 @@ page_five <- tabPanel(
 
 # Report Page here: reiterate PO1 & PO2
 page_six <- tabPanel(
+=======
+        clear throughout this project. Cases and incidents of hate crimes are
+        underreported to state and federal agencies, the source of our death counts,
+        including sucides, require people remorting and I do not beleive the number of
+        sucide fatalities are that low, and the way we determined trans care avilbiltiy
+        historicly is surface level and only goes back 5 years. Now, all of these failings
+        could be adressed with time and effort: Going and collecting testimony from trans
+        people all across america could solve the reporting issue, but that requries
+        earning trust, and the errors in our dataset for avilibity of transision care
+        could be done with extensive trawls of legistlative history of each state
+        (Georgia copyrigths all their laws so that may be an issue) and of getitng 
+        reports of trans people about how difficult it was when they started. And
+        as you have hopefully seen from these interactabiles, particularly the
+        reporting one, this has vastly impacted our project and it's reliablity.
+        So, the biggest thing we took away from this is a cautionary
+        tale of what happens when you have bad data and not enough time to fix
+        it."),
+      p("2. A general trend we've seen is an uptick in all of our data over time
+        which is to be expected. Because as trans people become more accepted, 
+        they're (we're -Faith) transision related care will become more avilible
+        as old gatekeeping goes by the wayside, but also it means that hate crimes
+        and suicides that would have been swept under the rug now have a better
+        chance of being reported. Now this doesn't disprove our hypothisis, but
+        it doesn't prove it either; when you only have 6 data points (reported suicides) for a period
+        of 20 years and 50 states, you can't make arguments based on trends. So
+        the second takeway is that we still need to work more to use data science to
+        prove this hypothisis. So right now, we're left with the common sense of
+        if you're visible, you're a better target, and life's better when you
+        don't hate your body."),
+      p("3. Now, just looking at the reported hate crimes, the places you (or 
+        at I -Faith) expect to report higher amounts of hate crimes were some
+        of the lowest, and vise versa. Caifornia reports 206 while South Carolina
+        Reports 5 total hate crimes, and if you take a look at Washington and
+        North Carolina you see that Washington seems to have more anti-trans hate
+        crimes per trans capita. So what's up there? Well, that leads us to the 
+        last take away, to use a chapter title from Data Feminism, 'what gets
+        counted counts'. Just think for a second, California and Washington, two
+        firmly democrat controled states (a party who are at least non-hostile to trans
+        people) report more hate crimes than the carolinas which are very conservative
+        (which is a party much more hostile to trans people), how does this make sense
+        are conseravtive controled states more friendly to trans people? *or* are
+        the officails there just more likely to not report transphobic hate crimes?
+        What isn't said is just as important as what is.")
+)
+
+
+page_five <- tabPanel(
+>>>>>>> 0ef2ded0ada1f4695b58a868f858b8b7b39c5915
   "Report",
   titlePanel("Report Page"),
   h3("Trans Rights Research"),
@@ -148,7 +209,7 @@ Hana Pham- hana pham@uw.edu, Fila Mohamed- fila10@uw.edu"),
 School, University of Washington"),
   p("Date: March 5th, 2022"), 
   p("Abstract: Our main addressing question is how the availability of trans 
-healthcare regarding medically transitioning as well as transphobic hate crimes 
+healthcare regarding medically transitioning, as well as transphobic hate crimes, 
 impacts rates of trans suicides. This is essential because data surrounding 
 the transgender community are often unknown to the general populous, therefore
 increasing the wealth of data available will help continue the fight for trans rights.
@@ -228,10 +289,11 @@ data set, it may be much better and contain much more data."),
 that the transgender community continues to suffer at the hand of ignorance and hate 
 of people that refuse to accept people for who they are. We wanted to know how lack 
 of medical care and hate crimes against trans people affect their mental health. Seeing 
-the data solidified the obvious answer we knew: the detrimental mental health 
-outcomes like suicide see increasing numbers. Something we noticed was how limited 
-our data sets were. This lack of data just shows how little attention there is to 
-obstacles that the transgender community face. We can see that hindering someone's ability
+the data confirmed the obvious answer we knew: the detrimental mental health 
+outcomes like suicide see increasing numbers. The transgender community's inability
+to fully transition has detrimental negative impacts on their mental health. 
+Something we noticed was how limited our data sets were. This lack of data just shows how little attention there is  
+surrounding obstacles that the transgender community face. We can see that hindering someone's ability
 to access the medical tools and support to continue their journey into becoming who they
 are has only negative outcomes that may be irreversible."), 
   p("6.0 Discussion: The most significant implication of our findings is that there
@@ -244,11 +306,11 @@ are researching this topic and caring enough to compile datasets. The more atten
 is, then the greater reason to incite change."),
   p("7.0 Conclusion: If there were a takeaway one could take from reading this 
 report, it would be that the transgender community continues to suffer and not receive 
-the equal rights they clearly deserve. The obvious lack of data we experience when
+the equal rights they clearly deserve. The obvious lack of data we experienced when
 compiling our project just shows how little attention there is on this crucial
 societal problem. Not one more person should be suffering because they aren't able to
 freely be who they want. Every transgender person deserves the medical attention they need,
-the mental health resources, and the equal rights just like everyone else in the world."),
+the mental health resources, and the equal rights as like everyone else in the world."),
   p("Acknowledgement: We would like to thank our peers for helping us find some 
     data sets."), 
   p("References: 
@@ -262,11 +324,48 @@ the mental health resources, and the equal rights just like everyone else in the
   https://www.hrc.org/resources/understanding-the-transgender-community")
 )
 
-ui <- navbarPage(
+ui <- fluidPage(navbarPage( 
   "Trans Rights Research",
   page_one,
-  page_two,
   page_three,
   page_four,
-  page_five,
-  page_six) 
+  page_two,
+  page_five),
+  tags$style(HTML(
+    '
+        body {
+            width: 100%;
+            margin: auto;
+            background-image: url("bkg.jfif");
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #title {
+            display: block;
+            margin: auto;
+            height: auto;
+            max-width: 100%;
+        }
+        .navbar{
+          background-color: #0ab0f2;
+        }
+        li a{
+            list-style-type: none;
+            color: #fa78d9;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-right: 2px solid #fa78d9;
+            border-left: 2px solid #fa78d9;
+            background-color: #0ab0f2;
+        }
+        
+        a{
+          color: #fa78d9;
+        }
+    '
+  ) )
+) 
