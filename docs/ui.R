@@ -17,8 +17,8 @@ page_one <- tabPanel(
     mainPanel(),
     mainPanel(
       p("This project aims to draw attention to the lack of availability of trans 
-        healthcare regarding medical transitioning and how it impacts the rates of trans
-        suicide and transphobic hate crimes. One of the datasets we used detailed reported 
+        healthcare regarding medical transitioning, and transphobic hate crimes in relation to
+        how it impacts the rates of trans suicide. One of the datasets we used detailed reported 
         crimes against trans victims. Our second dataset comes from the FBI records anti-trans 
         hate crimes. We can see a lot of empty data values, but this is a point we're aiming
         to emphasize: that there is an extreme lack of data on transphobic hate crimes. The 
@@ -26,8 +26,8 @@ page_one <- tabPanel(
         anti-discrimination laws involving exclusion or inclusion of trans care."), 
       p("The major issues we're addressing include trans rights, trans suicides, 
         transitioning impacts, and trans hate crimes. We're hoping our dataset can
-        answer how availability of trans healthcare impacts rates of trans 
-        suicide and transphobic crimes. This information can be helpful for policymakers to
+        answer how availability of trans healthcare and transphobic crimes impacts rates of trans 
+        suicide. This information can be helpful for policymakers to
         make decisions ensuring equal opportunities and inform the community on the unjust
         treatment of the trans population. Trans rights is a social justice issue that needs 
         to be brought to light. The numbers and data displayed here quantitify just how dire 
@@ -164,7 +164,7 @@ Hana Pham- hana pham@uw.edu, Fila Mohamed- fila10@uw.edu"),
 School, University of Washington"),
   p("Date: March 5th, 2022"), 
   p("Abstract: Our main addressing question is how the availability of trans 
-healthcare regarding medically transitioning as well as transphobic hate crimes 
+healthcare regarding medically transitioning, as well as transphobic hate crimes, 
 impacts rates of trans suicides. This is essential because data surrounding 
 the transgender community are often unknown to the general populous, therefore
 increasing the wealth of data available will help continue the fight for trans rights.
@@ -244,10 +244,11 @@ data set, it may be much better and contain much more data."),
 that the transgender community continues to suffer at the hand of ignorance and hate 
 of people that refuse to accept people for who they are. We wanted to know how lack 
 of medical care and hate crimes against trans people affect their mental health. Seeing 
-the data solidified the obvious answer we knew: the detrimental mental health 
-outcomes like suicide see increasing numbers. Something we noticed was how limited 
-our data sets were. This lack of data just shows how little attention there is to 
-obstacles that the transgender community face. We can see that hindering someone's ability
+the data confirmed the obvious answer we knew: the detrimental mental health 
+outcomes like suicide see increasing numbers. The transgender community's inability
+to fully transition has detrimental negative impacts on their mental health. 
+Something we noticed was how limited our data sets were. This lack of data just shows how little attention there is  
+surrounding obstacles that the transgender community face. We can see that hindering someone's ability
 to access the medical tools and support to continue their journey into becoming who they
 are has only negative outcomes that may be irreversible."), 
   p("6.0 Discussion: The most significant implication of our findings is that there
@@ -260,11 +261,11 @@ are researching this topic and caring enough to compile datasets. The more atten
 is, then the greater reason to incite change."),
   p("7.0 Conclusion: If there were a takeaway one could take from reading this 
 report, it would be that the transgender community continues to suffer and not receive 
-the equal rights they clearly deserve. The obvious lack of data we experience when
+the equal rights they clearly deserve. The obvious lack of data we experienced when
 compiling our project just shows how little attention there is on this crucial
 societal problem. Not one more person should be suffering because they aren't able to
 freely be who they want. Every transgender person deserves the medical attention they need,
-the mental health resources, and the equal rights just like everyone else in the world."),
+the mental health resources, and the equal rights as like everyone else in the world."),
   p("Acknowledgement: We would like to thank our peers for helping us find some 
     data sets."), 
   p("References: 
